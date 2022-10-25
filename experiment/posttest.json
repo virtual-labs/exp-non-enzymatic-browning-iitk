@@ -2,38 +2,49 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "1. Higher value of non-enzymatic browning index (NEBI) of product indicates",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Superior quality",                  ///// Write the option 1 inside double quotes
+        "b": "Inferior quality",                  ///// Write the option 2 inside double quotes
+        "c": "Quality remain constant",                  ///// Write the option 3 inside double quotes
+        "d": "Cannot predict quality"                   ///// Write the option 4 inside double quotes
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
+      "correctAnswer": "b"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "2. In presence of heat, the rate of maillard browning is",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Increased",                  ///// Write the option 1 inside double quotes
+        "b": "Decreased",                  ///// Write the option 2 inside double quotes
+        "c": "Remain constant",                  ///// Write the option 3 inside double quotes
+        "d": "Initially decreased then increased"                   ///// Write the option 4 inside double quotes
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      
+      "correctAnswer": "a"
+      
+    },
+    {
+      "question": "3. The absorbance value of thermally treated sample will be",
+      "answers": {
+        "a": "Less",                  ///// Write the option 1 inside double quotes
+        "b": "More",                  ///// Write the option 2 inside double quotes
+        "c": "Same",                  ///// Write the option 3 inside double quotes
+        "d": "Cannot say anything"                   ///// Write the option 4 inside double quotes
       },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
+      
+      "correctAnswer": "b"
+    },
+    {
+      "question": "4. In the centrifugation process, the suspended particles are",
+      "answers": {
+        "a": "Come on the surface",                  ///// Write the option 1 inside double quotes
+        "b": "Settle down in the bottom",                  ///// Write the option 2 inside double quotes
+        "c": "Uniformly suspended in the whole medium",                  ///// Write the option 3 inside double quotes
+        "d": "None of the above"                   ///// Write the option 4 inside double quotes
+      },
+      
+      "correctAnswer": "b"
+      
     }
   ]
 }
