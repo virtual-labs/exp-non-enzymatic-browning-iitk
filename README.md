@@ -1,24 +1,30 @@
 ## Introduction
 
+Non-enzymatic browning reactions and its determination 
 
-<b>Discipline | <b>Fill your discipline name here
+<b>Discipline | <b>Food Technology
 :--|:--|
-<b> Lab | <b> Fill your lab name here
-<b> Experiment|     <b> Fill your experiment name and number here
+<b> Lab | <b> Food Technology Lab
+<b> Experiment|     <b> Non-enzymatic browning reactions and its determination 
 
 ### About the Experiment 
 
-Fill a brief description of this experiment here
+Non-enzymatic browning (NEB) is one of the most important chemical reactions responsible for quality and color changes during the processing or prolonged storage of citrus fruit products. The Maillard reaction is the major cause of NEB in heated fruit juices. This reaction is initiated by the condensation of the carbonyl group of reducing sugars with free α-amino groups of amino acids. NEB may lead to some quality losses by altering the final product an unfavorable appearance and even result in reduced food safety due to new formed compounds such as 5-hydroxymethylfurfural (HMF). Since NEB has a significant influence on the product quality and safety, monitoring the extent of such reaction can be a valuable tool for assessing the product quality and safety during processing and prolonged storage. Spectroscopy in the visible wavelength range is the best method for monitoring the absorbance coefficient of the product and to determine the extent of NEB reaction in terms of non-enzymatic browning index (NEBI).
 
-<b>Name of Developer | <b> Fill the name of experiment owner here 
+
+
+<b>Name of Developers | <b> Prof. Kantesh Balani
 :--|:--|
-<b> Institute | <b>  
-<b> Email id|     <b>  
-<b> Department |  
+<b> Institute | <b>  IIT Kanpur
+<b> Email id|     <b>  kbalani@iitk.ac.in
+<b> Department |  Materials Science and Engineering
 
 ### Contributors List
 
 SrNo | Name | Faculty or Student | Department| Institute | Email id
 :--|:--|:--|:--|:--|:--|
-1 | . | . | . | . | .
-2 | . | . | . | . | .
+1 | Dr. Vivek Sachan | Faculty | Food Technology | HBTU Kanpur | viveksachan99@gmail.com
+2 | Pawan Sharma | Student | Food Technology | HBTU Kanpur | pawansharmampec@gmail.com
+3 | Ayush Kumar Shakya  | Student | Food Technology | HBTU Kanpur | ayushkumar121@outlook.com
+4 | Hemant Singh | Student | Food Technology | HBTU Kanpur | singh10hemant99@gmail.com
+5 | Abhishek Mishra | Student | Food Technology | HBTU Kanpur | abhishekmishraoff73@gmail.com
