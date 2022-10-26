@@ -3,10 +3,12 @@
     "questions": [
       {
         "question": "Non-enzymatic browning occurs due to",  
+        "answers": {
           "a": "Maillard reaction",                  
           "b": "Caramellisation reaction",                  
           "c": "Caramellisation reaction",                 
-          "d": "All of the above"                   
+          "d": "All of the above"  
+      },                 
         "correctAnswer": "d"
       },
       {
