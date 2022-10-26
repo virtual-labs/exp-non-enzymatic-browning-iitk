@@ -4,20 +4,20 @@
     {
       "question": "1. Higher value of non-enzymatic browning index (NEBI) of product indicates",
       "answers": {
-        "a": "Superior quality",                  ///// Write the option 1 inside double quotes
-        "b": "Inferior quality",                  ///// Write the option 2 inside double quotes
-        "c": "Quality remain constant",                  ///// Write the option 3 inside double quotes
-        "d": "Cannot predict quality"                   ///// Write the option 4 inside double quotes
+        "a": "Superior quality",                  
+        "b": "Inferior quality",                  
+        "c": "Quality remain constant",                 
+        "d": "Cannot predict quality"                  
       },
       "correctAnswer": "b"
     },
     {
       "question": "2. In presence of heat, the rate of maillard browning is",
       "answers": {
-        "a": "Increased",                  ///// Write the option 1 inside double quotes
-        "b": "Decreased",                  ///// Write the option 2 inside double quotes
-        "c": "Remain constant",                  ///// Write the option 3 inside double quotes
-        "d": "Initially decreased then increased"                   ///// Write the option 4 inside double quotes
+        "a": "Increased",                  
+        "b": "Decreased",                  
+        "c": "Remain constant",                  
+        "d": "Initially decreased then increased"                  
       },
       
       "correctAnswer": "a"
@@ -26,10 +26,10 @@
     {
       "question": "3. The absorbance value of thermally treated sample will be",
       "answers": {
-        "a": "Less",                  ///// Write the option 1 inside double quotes
-        "b": "More",                  ///// Write the option 2 inside double quotes
-        "c": "Same",                  ///// Write the option 3 inside double quotes
-        "d": "Cannot say anything"                   ///// Write the option 4 inside double quotes
+        "a": "Less",            
+        "b": "More",                 
+        "c": "Same",                  
+        "d": "Cannot say anything"                  
       },
       
       "correctAnswer": "b"
@@ -37,10 +37,10 @@
     {
       "question": "4. In the centrifugation process, the suspended particles are",
       "answers": {
-        "a": "Come on the surface",                  ///// Write the option 1 inside double quotes
-        "b": "Settle down in the bottom",                  ///// Write the option 2 inside double quotes
-        "c": "Uniformly suspended in the whole medium",                  ///// Write the option 3 inside double quotes
-        "d": "None of the above"                   ///// Write the option 4 inside double quotes
+        "a": "Come on the surface",                  
+        "b": "Settle down in the bottom",                 
+        "c": "Uniformly suspended in the whole medium",                  
+        "d": "None of the above"                   
       },
       
       "correctAnswer": "b"
