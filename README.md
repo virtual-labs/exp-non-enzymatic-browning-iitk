@@ -23,7 +23,6 @@ Non-enzymatic browning (NEB) is one of the most important chemical reactions res
 
 SrNo | Name | Faculty or Student | Department| Institute | Email id
 :--|:--|:--|:--|:--|:--|
-
 1 | Pawan Sharma | Student | Food Technology | HBTU Kanpur | pawansharmampec@gmail.com
 2 | Ayush Kumar Shakya  | Student | Food Technology | HBTU Kanpur | ayushkumar121@outlook.com
 3 | Hemant Singh | Student | Food Technology | HBTU Kanpur | singh10hemant99@gmail.com
