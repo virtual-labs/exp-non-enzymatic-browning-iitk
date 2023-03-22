@@ -1,0 +1,46 @@
+{
+
+  "details": [
+      {
+     "Experiment": "2. Non-enzymatic browning reactions and its determination",     
+     "Lab": "FOOD CHEMISTRY LAB",               
+     "Discipline": "FOOD TECHNOLOGY",				 
+     "Technology": "HTML, CSS, JS"         
+      }
+  ],
+
+  "developer": [
+      {       
+     "Developer": "VIVEK KUMAR",         
+     "Institute": "Harcourt Butler Technical University, Kanpur",               
+     "InstituteAcronym": "HBTU"   
+      }
+  ],
+
+  "contributer": [
+      {       
+     "Contributer": "Pawan Sharma",             
+     "Institute": "Harcourt Butler Technical University, Kanpur",               
+     "InstituteAcronym": "HBTU"         
+      },
+
+      {       
+     "Contributer": "Ayush Kumar Shakya",              
+     "Institute": "Harcourt Butler Technical University, Kanpur",               
+     "InstituteAcronym": "HBTU"        
+      },
+
+      {       
+     "Contributer": "Aman Kumar Singh",             
+     "Institute": "Harcourt Butler Technical University, Kanpur",               
+     "InstituteAcronym": "HBTU"           
+      },
+
+      {       
+     "Contributer": "Sonakshi Patel",              
+     "Institute": "Harcourt Butler Technical University, Kanpur",               
+     "InstituteAcronym": "HBTU"          
+      }
+  ]
+
+}

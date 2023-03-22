@@ -287,13 +287,45 @@
                 <img class="ppCap" src="assets/step3/pp tube capAsset 6.svg"
                     style="position: absolute; top: 325px;left: 90px;" width="30" />
 
-                <div class="element control-1" onclick="heatjuice()" style="opacity:1; left: 170px;top: 450px;">
+                <div class="element control-1" onclick="heatjuice()" style="opacity:1; left: 170px;top: 450px; opacity: 0;">
                     <small style=" background: #000; color:#fff; padding: 4px; margin-top: -50px;">
                         Heat Juice</small>
                 </div>
 
+            <small class="control-5 element" 
+                onclick="machineonstep31()" 
+                style="left: 640px; top: 455px; background: rgb(0, 0, 0) none repeat scroll 0% 0%; color: rgb(255, 255, 255); padding: 4px;">
+                Turn on
+            </small>
 
-                <div style="position:absolute;top: 335px;left: 96px;z-index: 4;font-size: 28px;font-weight: 600;">B
+            <button class="element" style="left: 432px;
+                top: 400px;
+                width: 50px;
+                font-size: 18px;
+                height: 30px;
+                background: #000;
+                color: #fff;" onclick="incTemp()">+</button>
+            <button class="element" style="left: 432px;
+                top: 433px;
+                width: 50px;
+                font-size: 18px;
+                height: 30px;
+                background: #000;
+                color: #fff;" onclick="decTemp()">-</button>
+            <button class="element" style="left: 510px;
+                top: 463px;
+                width: 50px;
+                font-size: 14px;
+                height: 20px;
+                background: #000;
+                color: #fff;" onclick="set31()">SET</button>
+
+                <div class="element reading-1" style="left: 500px; font-family: monospace; top: 410px; font-size: 12px; opacity: 1;">PT 00℃</div>
+                <div class="element reading-2" style="left: 500px; font-family: monospace; top: 420px; font-size: 12px; opacity: 1;">ST 00℃</div>
+
+
+                <div style="position:absolute;top: 335px;left: 96px;z-index: 4;font-size: 28px;font-weight: 600;">
+                    B
                 </div>
 
             </div>

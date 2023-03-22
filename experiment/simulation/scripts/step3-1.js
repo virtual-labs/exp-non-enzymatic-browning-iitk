@@ -16,6 +16,18 @@ let beakerAnimation_3_2 = bodymovin.loadAnimation({
 
 var sucked31 = false
 var juiceheated = false
+var machineon31 = false
+var machineset31 = false
+var machinesetcom = false
+
+var temp = 0
+var last_temp = 0
+
+function pad(num, size) {
+    var s = num+"";
+    while (s.length < size) s = "0" + s;
+    return s;
+}
 
 function suckPour31() {
     if (!task_done && juiceheated) {
@@ -82,8 +94,59 @@ function suckPour31() {
     }
 }
 
+function machineonstep31() {
+    if(!machineon31) {
+        machineon31 = true
+        gsap.to('#step-31 .control-5', {opacity: 0})
+    
+        beep.play()
+    }
+}
+
+function incTemp() {
+    if(!machineset31 && machineon31) {
+        temp++
+        document.querySelector('#step-31 .reading-2').innerHTML = `ST ${pad(temp, 2)}℃`
+
+        beep.play()
+    }
+}
+
+function decTemp() {
+    if(!machineset31 && machineon31) {
+        temp--
+        document.querySelector('#step-31 .reading-2').innerHTML = `ST ${pad(temp, 2)}℃`
+
+        beep.play()
+    }
+}
+
+function set31() {
+    if(machineon31) {
+        machineset31 = true
+    
+        if (last_temp != temp) {
+            var obj = { i: last_temp }
+            gsap.to(obj, {
+                i: temp,
+                ease: new SteppedEase.config(temp - last_temp),
+                duration: 5,
+                onUpdate: () => {
+                    document.querySelector('#step-31 .reading-1').innerHTML = `PT ${pad(obj.i, 2)}℃`
+                }, onComplete: () => {
+                    machinesetcom = true
+                    gsap.to('#step-31 .control-1', {opacity: 1})
+                    last_temp = temp
+                }
+            })
+        }
+
+        beep.play()
+    }
+}
+
 function heatjuice() {
-    if(!juiceheated) {
+    if(!juiceheated && machineon31 && machinesetcom) {
         beakerAnimation_3_2.playSegments([0, 331], true)
 
         gsap.to('#step-31 .control-1', {opacity: 0})
