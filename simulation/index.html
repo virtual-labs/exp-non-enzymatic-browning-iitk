@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HBTU vLab</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 4px solid black;
+        }
+
+        th,
+        td {
+            padding: 15px;
+        }
+
+        button {
+            outline: 0;
+            border: 0;
+            font-weight: 600;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 400;
+        }
+
+        body {
+            background: #eee;
+        }
+
+        header {
+            background: darkslateblue;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            color: #fff;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, .3);
+
+            height: 50px;
+        }
+
+        .clear {
+            background: transparent;
+            border: 0;
+            outline: 0;
+            cursor: pointer;
+        }
+
+
+        #sidebar {
+            position: fixed;
+            height: 94vh;
+            width: 400px;
+            background: #fff;
+            top: 6vh;
+            right: -500px;
+            padding: 20px;
+
+            box-shadow: -10px 0 20px rgba(0, 0, 0, .3);
+        }
+
+        #experiment {
+            background: #ccc;
+            width: 800px;
+            height: 550px;
+        }
+
+        .step {
+            position: relative;
+            width: 100%;
+            height: 100%;
+
+            overflow: hidden;
+            display: none;
+        }
+
+        .step h1.title {
+            text-align: center;
+            padding: 8px 0;
+            background: #fff;
+            font-size: 18px;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, .3);
+            font-weight: 600;
+        }
+
+        .step.active {
+            display: block;
+        }
+
+        .step .element {
+            position: absolute;
+            cursor: pointer;
+        }
+
+        #controls {
+            display: none;
+            position: absolute;
+            margin-top: 490px;
+            margin-left: -700px;
+        }
+
+        #controls button {
+            background: #000;
+            font-size: 28px;
+            color: #fff;
+            border: 0;
+            outline: 0;
+            padding: 8px 20px;
+            border-radius: 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+        }
+
+        #controls.active {
+            display: block;
+        }
+
+        #taskslist {
+            list-style-type: none;
+        }
+
+        #taskslist li {
+            padding: 5px 0;
+            font-size: 22px;
+        }
+    </style>
+    <script src="scripts/lottie.min.js"></script>
+</head>
+
+<body style="background: #eee">
+    <header>
+        <h1>Exp 2: Non-enzymatic browning reactions and its determination</h1>
+        <button class="clear" onclick="toggleSidebar()">
+            <img src="assets/checklist.svg" width="50" alt="checklist" />
+        </button>
+    </header>
+
+    <div style="display: flex; justify-content: center;margin-top: 20px;">
+        <div id="experiment">
+            <div class="step step-title" id="step-1" style="background: url('./assets/bgAsset.png');">
+                <h1 class="title">Step0: Make yourself familiar with the instruments & glassware </h1>
+                <img src="./assets/all glassware used.png" style="position: absolute; top: 0; left: 0;" />
+                <div class="controls">
+                    <small
+                        style="position: absolute;top: 450px;left: 100px;background: #000;color:#fff;padding: 4px;margin-top: 5px;">
+                        juicer
+                    </small>
+                    <small
+                        style="position: absolute;top: 450px;left: 250px;background: #000;color:#fff;padding: 4px;margin-top: 5px;">Centrifuge</small><small
+                        style="position: absolute;top: 450px;left: 450px;background: #000;color:#fff;padding: 4px;margin-top: 5px;">Spectrometer</small>
+
+                    <small
+                        style="position: absolute;top: 420px;left: 600px;background: #000;color:#fff;padding: 4px;margin-top: 5px;">Cuvettes</small>
+
+                    <small
+                        style="position: absolute;top: 370px;left: 630px;background: #000;color:#fff;padding: 4px;margin-top: 5px;">Centrifuge
+                        tube
+                    </small>
+
+                    <small
+                        style="position: absolute;top: 450px;left: 680px;background: #000;color:#fff;padding: 4px;margin-top: 5px;">Strainer
+                    </small>
+                </div>
+            </div>
+
+            <div class="step active" id="step-1" style="background: url('./assets/bgAsset.png');">
+                <h1 class="title">Step1: Extract juice from selected fruit/vegetable</h1>
+
+                <div class="element apple" onclick="juice()"
+                    style="z-index: 2;left: 100px; top: 450px; display: flex;justify-content: center;align-items: center;flex-direction: column;">
+                    <img src="assets/step1/appleslice.svg" width="80" />
+                    <small style="background: #000; color:#fff; padding: 4px; margin-top: 5px;">click to put
+                        into juicer</small>
+                </div>
+
+                <img class="element" style="left: 150px; top: 390px;" width="80" src="assets/step1/halfApple.svg" />
+                <img class="element juicerHandle" style="left: 400px;top: 230px;" src="assets/step1/juicerHandle.svg"
+                    width="80" />
+
+                <div class="bodymovinanim" style=" left: 120px;top: 100px;width: 600px;position: absolute;"></div>
+
+                <button class="element onbutton" onclick="juicer()"
+                    style="padding: 12px;left: 430px;top: 380px;background: transparent">
+                    <img src="assets/start-button.png" width="30" />
+                </button>
+
+                <div class="element juicer" onclick="juicer()" style="left: 383px; top: 420px;opacity: 0;">
+                    <small style="background: #000; color:#fff; padding: 4px; margin-top: -50px;">Click to turn on
+                        juicer</small>
+                </div>
+
+            </div>
+
+            <div class="step" id="step-2" style="background: url('./assets/bgAsset.png');">
+                <h1 class="title">Step2: Filtration of juice sample</h1>
+
+                <div class="bodymovinanim" style="top:0; left:0;width:800px; position: absolute; "></div>
+
+                <img src="assets/step2/particlesAsset 2.svg" class="filtrate"
+                    style="opacity:0; position: absolute; top: 360px;left: 170px;width: 60px;z-index: 3" />
+
+                <div class="element filter" onclick="filterJuice()"
+                    style="z-index: 2; left: 300px; top: 330px; display: flex;justify-content: center;align-items: center;flex-direction: column;">
+                    <img class="strainer" src="assets/step2/strainer.png" width="220" />
+                    <small style="background: #000; color:#fff; padding: 4px; margin-top: -50px;">click to
+                        put strainer</small>
+                </div>
+
+                <div class="element filter2" onclick="filterJuice2()"
+                    style="z-index: 2; opacity:0; left: 500px; top: 430px; display: flex;justify-content: center;align-items: center;flex-direction: column;">
+                    <small style="background: #000; color:#fff; padding: 4px; margin-top: -50px;">click to
+                        filter juice</small>
+                </div>
+            </div>
+
+            <div class="step" id="step-3" style="background: url('./assets/bgAsset.png');">
+                <h1 class="title">Step3: Pipette out 5ml strained juice and add into the centrifuge tube A</h1>
+
+                <div class="bodymovinanim_31" style="top:0; left:-300px;width:800px; position: absolute; "></div>
+                <div class="bodymovinanim_32" style="top:100px; left:100px;width:800px; position: absolute; "></div>
+
+                <div class="element pipette" onclick="suckPour()"
+                    style="left: 300px; top: 200px; display: flex;justify-content: center;align-items: center;flex-direction: column;">
+                    <img class="pipetteTop" src="assets/step3/pipette buttonAsset 4.svg"
+                        style="position: absolute;top: -20px;margin-left: 10px;z-index: 0" width="18" />
+
+                    <img src="assets/step3/empty pipetteAsset 3.svg" style="z-index: 1;" width="60" />
+
+                    <small
+                        style="z-index: 1; width: 200px; text-align: center; background: #000; color:#fff; padding: 4px; margin-top: -50px;">click
+                        to
+                        pipette out
+                        juice</small>
+
+                    <span class="ppReading" style="position: absolute;
+                    font-size: 8px;
+                    transform: rotateZ(-90deg);
+                    margin-top: -85px;
+                    color: white;
+                    font-weight: 800;
+                    z-index: 1;
+                    margin-left: 20px;">0000uL</span>
+                </div>
+
+                <div style="position:absolute;top: 335px;left: 196px;z-index: 4;font-size: 28px;font-weight: 600;">A
+                </div>
+
+                <img class="ppCap" src="assets/step3/pp tube capAsset 6.svg"
+                    style="position: absolute; top: 325px;left: 190px;" width="30" />
+            </div>
+
+            <div class="step" id="step-31" style="background: url('./assets/bgAsset.png');">
+                <h1 class="title">Step4: Heat strained juice & take 5ml of it in a centrifuge tube B </h1>
+
+                <div class="bodymovinanim_3-1" style="top:0; left:-400px;width:800px; position: absolute; "></div>
+                <div class="bodymovinanim_3-2" style="top:0; left: 0px;width:800px; position: absolute; "></div>
+
+                <div class="element pipette" onclick="suckPour31()"
+                    style="left: 200px; opacity: 0; top: 200px; display: flex;justify-content: center;align-items: center;flex-direction: column;">
+                    <img class="pipetteTop" src="assets/step3/pipette buttonAsset 4.svg"
+                        style="position: absolute;top: -20px;margin-left: 10px;z-index: 0" width="18" />
+
+                    <img src="assets/step3/empty pipetteAsset 3.svg" style="z-index: 1;" width="60" />
+
+                    <small
+                        style="z-index: 1; width: 200px; text-align: center; background: #000; color:#fff; padding: 4px; margin-top: -50px;">click
+                        to
+                        pipette out
+                        juice</small>
+
+                    <span class="ppReading" style="position: absolute;
+                font-size: 8px;
+                transform: rotateZ(-90deg);
+                margin-top: -85px;
+                color: white;
+                font-weight: 800;
+                z-index: 1;
+                margin-left: 20px;">0000uL</span>
+                </div>
+
+                <img class="ppCap" src="assets/step3/pp tube capAsset 6.svg"
+                    style="position: absolute; top: 325px;left: 90px;" width="30" />
+
+                <div class="element control-1" onclick="heatjuice()" style="opacity:1; left: 170px;top: 450px; opacity: 0;">
+                    <small style=" background: #000; color:#fff; padding: 4px; margin-top: -50px;">
+                        Heat Juice</small>
+                </div>
+
+            <small class="control-5 element" 
+                onclick="machineonstep31()" 
+                style="left: 640px; top: 455px; background: rgb(0, 0, 0) none repeat scroll 0% 0%; color: rgb(255, 255, 255); padding: 4px;">
+                Turn on
+            </small>
+
+            <button class="element" style="left: 432px;
+                top: 400px;
+                width: 50px;
+                font-size: 18px;
+                height: 30px;
+                background: #000;
+                color: #fff;" onclick="incTemp()">+</button>
+            <button class="element" style="left: 432px;
+                top: 433px;
+                width: 50px;
+                font-size: 18px;
+                height: 30px;
+                background: #000;
+                color: #fff;" onclick="decTemp()">-</button>
+            <button class="element" style="left: 510px;
+                top: 463px;
+                width: 50px;
+                font-size: 14px;
+                height: 20px;
+                background: #000;
+                color: #fff;" onclick="set31()">SET</button>
+
+                <div class="element reading-1" style="left: 500px; font-family: monospace; top: 410px; font-size: 12px; opacity: 1;">PT 00℃</div>
+                <div class="element reading-2" style="left: 500px; font-family: monospace; top: 420px; font-size: 12px; opacity: 1;">ST 00℃</div>
+
+
+                <div style="position:absolute;top: 335px;left: 96px;z-index: 4;font-size: 28px;font-weight: 600;">
+                    B
+                </div>
+
+            </div>
+
+            <div class="step" id="step-4" style="background: url('./assets/bgAsset.png');">
+                <h1 class="title">step5: Add 5ml of 95% ethyl alcohol in both centrifuge tubes</h1>
+
+                <div class="bodymovinanim_4" style="top:0; left:-300px;width:800px; position: absolute; "></div>
+
+                <img class="ppCap" src="assets/step3/pp tube capAsset 6.svg"
+                    style="position: absolute; top: 325px;left: 190px;" width="30" />
+
+                <div style="position:absolute;top: 335px;left: 196px;z-index: 4;font-size: 28px;font-weight: 600;">A
+                </div>
+
+
+                <div class="bodymovinanim_41" style="top:0; left:-250px;width:800px; position: absolute; "></div>
+
+                <img class="ppCap2" src="assets/step3/pp tube capAsset 6.svg"
+                    style="position: absolute; top: 325px;left: 240px;" width="30" />
+
+                <div style="position:absolute;top: 335px;left: 246px;z-index: 4;font-size: 28px;font-weight: 600;">B
+                </div>
+
+
+                <div class="element pipette" onclick="suckPourAlcohol()"
+                    style="left: 300px; top: 200px; display: flex;justify-content: center;align-items: center;flex-direction: column;">
+                    <img class="pipetteTop" src="assets/step3/pipette buttonAsset 4.svg"
+                        style="position: absolute;top: -20px;margin-left: 10px;z-index: 0" width="18" />
+
+                    <img src="assets/step3/empty pipetteAsset 3.svg" style="z-index: 1;" width="60" />
+
+                    <small
+                        style="z-index: 1; width: 200px; text-align: center; background: #000; color:#fff; padding: 4px; margin-top: -50px;">click
+                        to
+                        pipette out
+                        alcohol</small>
+
+                    <span class="ppReading" style="position: absolute;
+                    font-size: 8px;
+                    transform: rotateZ(-90deg);
+                    margin-top: -85px;
+                    color: white;
+                    font-weight: 800;
+                    z-index: 1;
+                    margin-left: 20px;">0000uL</span>
+                </div>
+
+                <img src="assets/step4/ethyl alcoholAsset 12.svg" style="position: absolute; left: 550px;top: 300px;"
+                    width="75" />
+
+                <img class="cap" src="assets/step4/bottle capAsset 13.svg"
+                    style="position: absolute;left: 570px;top: 290px;" width="36" />
+            </div>
+
+            <div class="step" id="step-5" style="background: url('./assets/bgAsset.png');">
+                <h1 class="title">Step6: Put both A and B tubes in the centrifuge machine and centrifuge it for 10 min
+                    at 5000rpm</h1>
+
+                <div class="bodymovinanim_5" style="top:0; left: 0px;width:800px; position: absolute; "></div>
+
+                <div class="controlsCentrifugeControl">
+                    <div class="element controlCentrifuge1" onclick="animateSegment()"
+                        style="left: 220px;top: 240px; opacity: 0">
+                        <small style="background: #000; color:#fff; padding: 4px; margin-top: -50px;">Open
+                            Centrifuge</small>
+                    </div>
+
+                    <div class="element controlCentrifuge2" onclick="animateSegment()"
+                        style="left: 525px;top: 350px; opacity: 0">
+                        <small style="background: #000; color:#fff; padding: 4px; margin-top: -50px;">
+                            Place Sample A
+                        </small>
+                    </div>
+
+                    <div class="element controlCentrifuge3" onclick="animateSegment()"
+                        style="left: 580px;top: 350px; opacity: 0">
+                        <small style="background: #000; color:#fff; padding: 4px; margin-top: -50px;">
+                            Place Sample B
+                        </small>
+                    </div>
+
+                    <div class="element controlCentrifuge4" onclick="animateSegment()"
+                        style="left: 220px;top: 240px; opacity: 0">
+                        <small style="background: #000; color:#fff; padding: 4px 12px; margin-top: -50px;">
+                            Close Lid
+                        </small>
+                    </div>
+                </div>
+
+                <div class="buttonsCentrifuge">
+                    <button onclick="ON()" class="element onbutton"
+                        style="font-size: 18px; top: 422px;left: 143px; padding: 10px;">ON</button>
+                    <button onclick="MEN()" class="element"
+                        style="font-size: 14px;border: 0;outline: 0;top: 421px;padding: 2px;left: 195px;">MEN</button>
+                    <button onclick="SET()" class="element"
+                        style="font-size: 14px;border: 0;outline: 0;left: 195px;padding: 2px 6px;top: 445px;">SET</button>
+                    <button onclick="ADD()" class="element"
+                        style="font-size: 14px;border: 0;outline: 0;left: 320px;padding: 2px;top: 421px;">ADD</button>
+                    <button onclick="SUB()" class="element"
+                        style="font-size: 14px;border: 0;outline: 0;left: 320px;padding: 2px 3px;top: 445px;padding-right: 4px;">SUB</button>
+                </div>
+
+                <div>
+                    <small class="rmpVal" style="position: absolute;left: 240px; top: 425px; opacity: 0">RPM 100</small>
+                    <small class="timVal" style="position: absolute;left: 240px; top: 444px; opacity: 0">TIM 1</small>
+                </div>
+            </div>
+
+            <div class="step" id="step-7" style="background: url('./assets/bgAsset.png');">
+                <h1 class="title">Step7: Pipette out 1ml of supernatant from the centrifuge tubes and add to the
+                    seperate cuvettes </h1>
+
+                <div class="bodymovinanim_7" style="top:0; left: 200px;width:800px; position: absolute; "></div>
+                <div class="bodymovinanim_71" style="top:0; left: 100px;width:800px; position: absolute; "></div>
+
+                <div class="bodymovinanim_72" style="top:0; left: -70px;width:800px; position: absolute; "></div>
+                <div class="bodymovinanim_73" style="top:0; left: -20px;width:800px; position: absolute; "></div>
+
+                <div style="position:absolute;top: 420px;left: 146px;z-index: 4;font-size: 28px;font-weight: 600;">B
+                </div>
+                <div style="position:absolute;top: 420px;left: 196px;z-index: 4;font-size: 28px;font-weight: 600;">A
+                </div>
+
+                <div style="position:absolute;top: 325px;left: 578px;z-index: 4;font-size: 28px;font-weight: 600;">A
+                </div>
+                <div style="position:absolute;top: 325px;left: 678px;z-index: 4;font-size: 28px;font-weight: 600;">B
+                </div>
+
+
+                <div class="element pipette" onclick="suckPour7()"
+                    style="left: 300px; top: 200px; display: flex;justify-content: center;align-items: center;flex-direction: column;">
+                    <img class="pipetteTop" src="assets/step3/pipette buttonAsset 4.svg"
+                        style="position: absolute;top: -20px;margin-left: 10px;z-index: 0" width="18" />
+
+                    <img src="assets/step3/empty pipetteAsset 3.svg" style="z-index: 1;" width="60" />
+
+                    <small
+                        style="z-index: 1;  width: 200px; text-align: center; background: #000; color:#fff; padding: 4px; margin-top: -50px;">click
+                        to
+                        pipette out</small>
+
+                    <span class="ppReading" style="position: absolute;
+                    font-size: 8px;
+                    transform: rotateZ(-90deg);
+                    margin-top: -85px;
+                    color: white;
+                    font-weight: 800;
+                    z-index: 1;
+                    margin-left: 20px;">0000uL</span>
+                </div>
+            </div>
+
+            <div class="step" id="step-8" style="background: url('./assets/bgAsset.png');">
+                <h1 class="title">Step8: Add 1 ml of 95% ethyl alcohol to 2 other cubettes</h1>
+
+                <div class="bodymovinanim_81" style="top:0; left: -70px;width:800px; position: absolute; "></div>
+                <div class="bodymovinanim_82" style="top:0; left: -20px;width:800px; position: absolute; "></div>
+
+                <div class="element pipette" onclick="suckPour8()"
+                    style="left: 300px; top: 200px; display: flex;justify-content: center;align-items: center;flex-direction: column;">
+                    <img class="pipetteTop" src="assets/step3/pipette buttonAsset 4.svg"
+                        style="position: absolute;top: -20px;margin-left: 10px;z-index: 0" width="18" />
+
+                    <img src="assets/step3/empty pipetteAsset 3.svg" style="z-index: 1;" width="60" />
+
+                    <small
+                        style="z-index: 1;  width: 200px; text-align: center; background: #000; color:#fff; padding: 4px; margin-top: -50px;">click
+                        to
+                        pipette out</small>
+
+                    <span class="ppReading" style="position: absolute;
+                    font-size: 8px;
+                    transform: rotateZ(-90deg);
+                    margin-top: -85px;
+                    color: white;
+                    font-weight: 800;
+                    z-index: 1;
+                    margin-left: 20px;">0000uL</span>
+                </div>
+
+                <img src="assets/step4/ethyl alcoholAsset 12.svg" style="position: absolute; left: 550px;top: 300px;"
+                    width="75" />
+
+                <img class="cap" src="assets/step4/bottle capAsset 13.svg"
+                    style="position: absolute;left: 570px;top: 290px;" width="36" />
+            </div>
+
+            <div class="step" id="step-9" style="background: url('./assets/bgAsset.png');">
+                <h1 class="title">Step9: Switch on the UV-vis spectrophotometer and set the wavelength at 420 nm &
+                    calibrate it using ethyl alcohol cuvettes</h1>
+
+                <div class="bodymovinanim_9" style="top:0; left: 0px;width:800px; position: absolute; "></div>
+
+                <div>
+                    <button onclick="menu()" class="element"
+                        style="background:transparent; padding: 6px;left: 330px;top: 314px;padding-right: 34px;">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                    <button onclick="read()" class="element"
+                        style="background:transparent; padding: 6px 24px;left: 328px;top: 340px;">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                    <button onclick="inc()" class="element"
+                        style="background:transparent; padding: 6px;left: 400px;top: 314px;padding-left: 34px;">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                    <button onclick="dec()" class="element"
+                        style="background:transparent; padding: 6px 30px;left: 400px;top: 340px; padding-right: 20px;">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                    <button onclick="turnOnMachine()" class="element"
+                        style="background:transparent;padding: 8px 10px;left: 382px;top: 324px;border-radius: 100%;">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                </div>
+
+                <div class="readings" style="opacity:0">
+                    <div class="read-1"
+                        style="font-family: monospace; font-size: 12px;position: absolute;left: 335px;top: 294px;font-weight: 900;color: #000;">
+                        λ=280</div>
+                    <div class="read-2"
+                        style="font-family: monospace; font-size: 12px;position: absolute;left: 375px;top: 294px;font-weight: 900;color: #000;">
+                        Abs=0</div>
+                </div>
+
+                <div class="element control-1" onclick="step9()" style="opacity:0; left: 570px; top: 520px;">
+                    <small
+                        style="background: #000; color:#fff; padding: 4px; margin-top: -50px;display: block; text-align: center;">place
+                        cuvettes</small>
+                </div>
+
+                <div class="element control-2" onclick="closeLidFunc()" style="opacity:0; left: 200px;top: 300px;">
+                    <small style="background: #000; color:#fff; padding: 4px; margin-top: -50px;">
+                        Close Lid</small>
+                </div>
+
+                <div class="element control-3" onclick="animateMessage10()" style="opacity:0;left: 330px; top: 420px;">
+                    <small
+                        style="background: #000; color:#fff; padding: 4px; margin-top: -50px;display: block; text-align: center;">Press
+                        read</small>
+                </div>
+            </div>
+
+            <div class="step" id="step-10" style="background: url('./assets/bgAsset.png');">
+                <h1 class="title">Step10: Replace one ethyl alcohol cuvette (A&B) with supernatant cuvette and measure
+                    the absorbance</h1>
+
+                <div class="bodymovinanim_10" style="top:0; left: 0px;width:800px; position: absolute; "></div>
+
+                <div>
+                    <button class="element"
+                        style="background:transparent; padding: 6px;left: 330px;top: 314px;padding-right: 34px;">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                    <button onclick="read10()" class="element"
+                        style="background:transparent; padding: 6px 24px;left: 328px;top: 340px;">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                    <button class="element"
+                        style="background:transparent; padding: 6px;left: 400px;top: 314px;padding-left: 34px;">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                    <button class="element"
+                        style="background:transparent; padding: 6px 30px;left: 400px;top: 340px; padding-right: 20px;">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                    <button class="element"
+                        style="background:transparent; padding: 8px 10px;left: 382px;top: 324px;border-radius: 100%;">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                </div>
+
+                <div class="readings">
+                    <div class="read-1"
+                        style="font-family: monospace; font-size: 12px;position: absolute;left: 335px;top: 294px;font-weight: 900;color: #000;">
+                        λ=420</div>
+                    <div class="read-2"
+                        style="font-family: monospace; font-size: 12px;position: absolute;left: 375px;top: 294px;font-weight: 900;color: #000;">
+                        Abs=0.1275</div>
+                </div>
+
+                <div class="element control-1" onclick="animateMessage10()" style="opacity:1; left: 200px;top: 300px;">
+                    <small style=" background: #000; color:#fff; padding: 4px; margin-top: -50px;">
+                        Open Lid</small>
+                </div>
+
+                <div class="element control-2" onclick="animateMessage10()" style="opacity:0; left: 650px; top: 520px;">
+                    <small
+                        style="background: #000; color:#fff; padding: 4px; margin-top: -50px;display: block; text-align: center;">Replace
+                        cuvettes</small>
+                </div>
+
+                <div class="element control-3" style="opacity:0;left: 330px; top: 420px;">
+                    <small
+                        style="background: #000; color:#fff; padding: 4px; margin-top: -50px;display: block; text-align: center;">Press
+                        read</small>
+                </div>
+            </div>
+
+            <div class="step">
+                <h1 class="title">Step11: Observation & Result</h1>
+                <div style="margin-left: 50px;">
+                    <h1>Observation</h1>
+                    <table style="width: 100%;margin-top: 30px;">
+                        <tr style="background: #000;">
+                            <th style="color: #fff;">Sample</th>
+                            <th style="color: #fff;">Absorbance</th>
+                        </tr>
+                        <tr>
+                            <th>Fresh Apple Juice (A)</th>
+                            <th>0.7312</th>
+                        </tr>
+                        <tr>
+                            <th>Heated Apple Juice (B)</th>
+                            <th>0.9147</th>
+                        </tr>
+                    </table>
+
+                    <h1 style="margin-top: 30px;">Result</h1>
+
+                    <p style="font-weight: 600;">NeBI of fresh apple juice is = 0.7312</p>
+                    <p style="font-weight: 600;">NeBI of heated apple juice is = 0.9147</p>
+
+                    <h1 style="margin-top: 30px;">Conclusion</h1>
+                    <p style="font-weight: 600;">Results indicated that thermal treatment of juices increase the NeBI value of the sample</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="controls">
+            <button onclick="next()">
+                Next
+            </button>
+        </div>
+    </div>
+
+    <div id="sidebar">
+        <h1>Task Completed</h1>
+        <ul id="taskslist">
+        </ul>
+    </div>
+
+    <script src="scripts/gsap.min.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/step1.js"></script>
+    <script src="scripts/step2.js"></script>
+    <script src="scripts/step3.js"></script>
+    <script src="scripts/step3-1.js"></script>
+    <script src="scripts/step4.js"></script>
+    <script src="scripts/step5.js"></script>
+    <script src="scripts/step7.js"></script>
+    <script src="scripts/step8.js"></script>
+    <script src="scripts/step9.js"></script>
+    <script src="scripts/step10.js"></script>
+<script src="../assets/js/iframeResize.js"></script></body>
+
+</html>

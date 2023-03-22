@@ -1,0 +1,377 @@
+
+/home/runner/work/exp-non-enzymatic-browning-iitk/exp-non-enzymatic-browning-iitk/experiment/posttest.js
+  18:12  warning  'letter' is not defined  no-undef
+  22:75  warning  'letter' is not defined  no-undef
+  23:15  warning  'letter' is not defined  no-undef
+  24:39  warning  'letter' is not defined  no-undef
+
+/home/runner/work/exp-non-enzymatic-browning-iitk/exp-non-enzymatic-browning-iitk/experiment/pretest.js
+  18:12  warning  'letter' is not defined  no-undef
+  22:75  warning  'letter' is not defined  no-undef
+  23:15  warning  'letter' is not defined  no-undef
+  24:39  warning  'letter' is not defined  no-undef
+
+/home/runner/work/exp-non-enzymatic-browning-iitk/exp-non-enzymatic-browning-iitk/experiment/simulation/scripts/gsap.min.js
+  10:83     warning  'exports' is not defined                                         no-undef
+  10:125    warning  'define' is not defined                                          no-undef
+  10:138    warning  'define' is not defined                                          no-undef
+  10:14192  warning  Unnecessary escape character: \+                                 no-useless-escape
+  10:14289  warning  Unnecessary escape character: \.                                 no-useless-escape
+  10:21628  warning  Expected a conditional expression and instead saw an assignment  no-cond-assign
+  10:36417  warning  Expected a conditional expression and instead saw an assignment  no-cond-assign
+  10:46032  warning  'e' is defined but never used                                    no-unused-vars
+  10:46357  warning  'e' is defined but never used                                    no-unused-vars
+  10:46360  warning  'r' is defined but never used                                    no-unused-vars
+  10:48303  warning  Expected a conditional expression and instead saw an assignment  no-cond-assign
+  10:48360  warning  Expected a conditional expression and instead saw an assignment  no-cond-assign
+  10:57184  warning  Empty block statement                                            no-empty
+  10:60246  warning  Expected a conditional expression and instead saw an assignment  no-cond-assign
+  10:64959  warning  Unnecessary escape character: \(                                 no-useless-escape
+  10:67756  warning  Expected a conditional expression and instead saw an assignment  no-cond-assign
+  10:67859  warning  Expected a conditional expression and instead saw an assignment  no-cond-assign
+
+/home/runner/work/exp-non-enzymatic-browning-iitk/exp-non-enzymatic-browning-iitk/experiment/simulation/scripts/index.js
+  10:10  warning  'toggleSidebar' is defined but never used         no-unused-vars
+  12:9   warning  'gsap' is not defined                             no-undef
+  18:9   warning  'gsap' is not defined                             no-undef
+  26:10  warning  'next' is defined but never used                  no-unused-vars
+  34:10  warning  'previous' is defined but never used              no-unused-vars
+  42:10  warning  'addTask' is defined but never used               no-unused-vars
+  81:5   warning  'beep' is assigned a value but never used         no-unused-vars
+  82:5   warning  'humming' is assigned a value but never used      no-unused-vars
+  83:5   warning  'hydrolics' is assigned a value but never used    no-unused-vars
+  84:5   warning  'juicerSound' is assigned a value but never used  no-unused-vars
+
+/home/runner/work/exp-non-enzymatic-browning-iitk/exp-non-enzymatic-browning-iitk/experiment/simulation/scripts/lottie.min.js
+   2:41      warning  'define' is not defined                                                    no-undef
+   3:9       warning  'define' is not defined                                                    no-undef
+   6:46      warning  'module' is not defined                                                    no-undef
+   7:9       warning  'module' is not defined                                                    no-undef
+  13:152     warning  'isSafari' is assigned a value but never used                              no-unused-vars
+  13:223     warning  'cachedColors' is assigned a value but never used                          no-unused-vars
+  13:242     warning  'bm_rounder' is assigned a value but never used                            no-unused-vars
+  13:267     warning  'bm_rnd' is assigned a value but never used                                no-unused-vars
+  13:315     warning  'bm_abs' is assigned a value but never used                                no-unused-vars
+  13:395     warning  'blitter' is assigned a value but never used                               no-unused-vars
+  13:2387    warning  'BMAnimationConfigErrorEvent' is defined but never used                    no-unused-vars
+  13:2479    warning  'currentTime' is not defined                                               no-undef
+  13:14505   warning  Empty block statement                                                      no-empty
+  13:17407   warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  13:22275   warning  'e' is defined but never used                                              no-unused-vars
+  13:26466   warning  'e' is defined but never used                                              no-unused-vars
+  13:59757   warning  't' is defined but never used                                              no-unused-vars
+  13:69117   warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  13:69439   warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  13:80375   warning  'Howl' is not defined                                                      no-undef
+  13:80386   warning  'Howl' is not defined                                                      no-undef
+  13:80867   warning  't' is defined but never used                                              no-unused-vars
+  13:81630   warning  't' is defined but never used                                              no-unused-vars
+  13:84409   warning  Empty block statement                                                      no-empty
+  13:96554   warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  13:105376  warning  'i' is defined but never used                                              no-unused-vars
+  13:176937  warning  't' is defined but never used                                              no-unused-vars
+  13:181932  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  13:195666  warning  't' is defined but never used                                              no-unused-vars
+  13:195669  warning  'e' is defined but never used                                              no-unused-vars
+  13:195672  warning  'r' is defined but never used                                              no-unused-vars
+  13:202235  warning  't' is defined but never used                                              no-unused-vars
+  13:205874  warning  't' is defined but never used                                              no-unused-vars
+  13:207537  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  13:240537  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  13:255133  warning  'window' is assigned a value but never used                                no-unused-vars
+  13:255148  warning  'document' is assigned a value but never used                              no-unused-vars
+  13:255390  warning  '$bm_neg' is defined but never used                                        no-unused-vars
+  13:256570  warning  'add' is assigned a value but never used                                   no-unused-vars
+  13:258302  warning  '$bm_sum' is assigned a value but never used                               no-unused-vars
+  13:258317  warning  '$bm_sub' is assigned a value but never used                               no-unused-vars
+  13:258332  warning  '$bm_mul' is assigned a value but never used                               no-unused-vars
+  13:258347  warning  '$bm_div' is assigned a value but never used                               no-unused-vars
+  13:258362  warning  '$bm_mod' is assigned a value but never used                               no-unused-vars
+  13:258386  warning  'clamp' is defined but never used                                          no-unused-vars
+  13:258537  warning  'radians_to_degrees' is assigned a value but never used                    no-unused-vars
+  13:258585  warning  'degreesToRadians' is defined but never used                               no-unused-vars
+  13:258634  warning  'degrees_to_radians' is assigned a value but never used                    no-unused-vars
+  13:258988  warning  'normalize' is defined but never used                                      no-unused-vars
+  13:259039  warning  'rgbToHsl' is defined but never used                                       no-unused-vars
+  13:259584  warning  'hslToRgb' is defined but never used                                       no-unused-vars
+  13:259854  warning  'linear' is defined but never used                                         no-unused-vars
+  13:260239  warning  'random' is defined but never used                                         no-unused-vars
+  13:260609  warning  'createPath' is defined but never used                                     no-unused-vars
+  13:261121  warning  '$bm_transform' is assigned a value but never used                         no-unused-vars
+  13:261426  warning  'inPoint' is assigned a value but never used                               no-unused-vars
+  13:261483  warning  'outPoint' is assigned a value but never used                              no-unused-vars
+  13:261541  warning  'width' is assigned a value but never used                                 no-unused-vars
+  13:261582  warning  'height' is assigned a value but never used                                no-unused-vars
+  13:261624  warning  'name' is assigned a value but never used                                  no-unused-vars
+  13:261689  warning  'toWorld' is assigned a value but never used                               no-unused-vars
+  13:261698  warning  'fromWorld' is assigned a value but never used                             no-unused-vars
+  13:261719  warning  'toComp' is assigned a value but never used                                no-unused-vars
+  13:261727  warning  'fromCompToSurface' is assigned a value but never used                     no-unused-vars
+  13:261746  warning  'position' is defined but never used                                       no-unused-vars
+  13:261756  warning  'rotation' is defined but never used                                       no-unused-vars
+  13:261766  warning  'anchorPoint' is assigned a value but never used                           no-unused-vars
+  13:261779  warning  'scale' is defined but never used                                          no-unused-vars
+  13:261797  warning  'thisComp' is assigned a value but never used                              no-unused-vars
+  13:261807  warning  'mask' is assigned a value but never used                                  no-unused-vars
+  13:262143  warning  'numKeys' is assigned a value but never used                               no-unused-vars
+  13:262186  warning  'active' is assigned a value but never used                                no-unused-vars
+  13:262230  warning  'wiggle' is assigned a value but never used                                no-unused-vars
+  13:262745  warning  'loopInDuration' is defined but never used                                 no-unused-vars
+  13:262803  warning  'loopOutDuration' is defined but never used                                no-unused-vars
+  13:262927  warning  'loop_in' is assigned a value but never used                               no-unused-vars
+  13:263022  warning  'loop_out' is assigned a value but never used                              no-unused-vars
+  13:263067  warning  'smooth' is assigned a value but never used                                no-unused-vars
+  13:263272  warning  'comp' is assigned a value but never used                                  no-unused-vars
+  13:263368  warning  'velocity' is assigned a value but never used                              no-unused-vars
+  13:263385  warning  'text' is assigned a value but never used                                  no-unused-vars
+  13:263391  warning  'textIndex' is assigned a value but never used                             no-unused-vars
+  13:263402  warning  'textTotal' is assigned a value but never used                             no-unused-vars
+  13:263413  warning  'selectorValue' is assigned a value but never used                         no-unused-vars
+  13:263437  warning  'lookAt' is defined but never used                                         no-unused-vars
+  13:263635  warning  'easeOut' is defined but never used                                        no-unused-vars
+  13:263715  warning  'easeIn' is defined but never used                                         no-unused-vars
+  13:263793  warning  'ease' is defined but never used                                           no-unused-vars
+  13:264192  warning  'nearestKey' is defined but never used                                     no-unused-vars
+  13:264787  warning  'key' is defined but never used                                            no-unused-vars
+  13:265021  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  13:265166  warning  'framesToTime' is defined but never used                                   no-unused-vars
+  13:265254  warning  'timeToFrames' is defined but never used                                   no-unused-vars
+  13:265429  warning  'sourceRectAtTime' is defined but never used                               no-unused-vars
+  13:265492  warning  'substring' is defined but never used                                      no-unused-vars
+  13:265618  warning  'substr' is defined but never used                                         no-unused-vars
+  13:265735  warning  'posterizeTime' is defined but never used                                  no-unused-vars
+  13:265833  warning  'index' is assigned a value but never used                                 no-unused-vars
+  13:265856  warning  'hasParent' is assigned a value but never used                             no-unused-vars
+  13:265966  warning  'globalData' is assigned a value but never used                            no-unused-vars
+  13:268974  warning  'elem' is not defined                                                      no-undef
+  13:270398  warning  'elem' is not defined                                                      no-undef
+  13:273544  warning  't' is defined but never used                                              no-unused-vars
+  13:293613  warning  'ProjectInterface' is already defined                                      no-redeclare
+  13:296015  warning  't' is defined but never used                                              no-unused-vars
+  13:298500  warning  'EffectsManager' is already defined                                        no-redeclare
+  13:300533  warning  '_isFrozen' is assigned a value but never used                             no-unused-vars
+  13:303249  warning  Unnecessary escape character: \?                                           no-useless-escape
+
+/home/runner/work/exp-non-enzymatic-browning-iitk/exp-non-enzymatic-browning-iitk/experiment/simulation/scripts/step1.js
+   1:23  warning  'bodymovin' is not defined          no-undef
+  11:10  warning  'juice' is defined but never used   no-unused-vars
+  13:18  warning  'gsap' is not defined               no-undef
+  45:10  warning  'juicer' is defined but never used  no-unused-vars
+  47:18  warning  'gsap' is not defined               no-undef
+  55:17  warning  'juicerSound' is not defined        no-undef
+  59:17  warning  'task_done' is not defined          no-undef
+  60:17  warning  'juicerSound' is not defined        no-undef
+  61:17  warning  'addTask' is not defined            no-undef
+
+/home/runner/work/exp-non-enzymatic-browning-iitk/exp-non-enzymatic-browning-iitk/experiment/simulation/scripts/step10.js
+   1:26  warning  'bodymovin' is not defined                    no-undef
+  12:10  warning  'read10' is defined but never used            no-unused-vars
+  14:9   warning  'beep' is not defined                         no-undef
+  15:9   warning  'gsap' is not defined                         no-undef
+  22:13  warning  'gsap' is not defined                         no-undef
+  28:13  warning  'task_done' is not defined                    no-undef
+  29:13  warning  'addTask' is not defined                      no-undef
+  35:10  warning  'animateMessage10' is defined but never used  no-unused-vars
+  36:10  warning  'task_done' is not defined                    no-undef
+  40:13  warning  'gsap' is not defined                         no-undef
+  41:13  warning  'gsap' is not defined                         no-undef
+  51:13  warning  'gsap' is not defined                         no-undef
+  52:13  warning  'gsap' is not defined                         no-undef
+  61:13  warning  'gsap' is not defined                         no-undef
+  62:13  warning  'gsap' is not defined                         no-undef
+  71:13  warning  'gsap' is not defined                         no-undef
+  72:13  warning  'gsap' is not defined                         no-undef
+  83:13  warning  'gsap' is not defined                         no-undef
+  84:13  warning  'gsap' is not defined                         no-undef
+  93:13  warning  'gsap' is not defined                         no-undef
+  94:13  warning  'gsap' is not defined                         no-undef
+
+/home/runner/work/exp-non-enzymatic-browning-iitk/exp-non-enzymatic-browning-iitk/experiment/simulation/scripts/step2.js
+   1:25  warning  'bodymovin' is not defined                no-undef
+  11:10  warning  'filterJuice' is defined but never used   no-unused-vars
+  13:18  warning  'gsap' is not defined                     no-undef
+  26:10  warning  'filterJuice2' is defined but never used  no-unused-vars
+  28:18  warning  'gsap' is not defined                     no-undef
+  36:17  warning  'gsap' is not defined                     no-undef
+  39:17  warning  'task_done' is not defined                no-undef
+  40:17  warning  'addTask' is not defined                  no-undef
+
+/home/runner/work/exp-non-enzymatic-browning-iitk/exp-non-enzymatic-browning-iitk/experiment/simulation/scripts/step3-1.js
+    1:27  warning  'bodymovin' is not defined                   no-undef
+    9:27  warning  'bodymovin' is not defined                   no-undef
+   32:10  warning  'suckPour31' is defined but never used       no-unused-vars
+   33:10  warning  'task_done' is not defined                   no-undef
+   36:22  warning  'gsap' is not defined                        no-undef
+   48:37  warning  'SteppedEase' is not defined                 no-undef
+   67:17  warning  'obj' is already defined                     no-redeclare
+   68:17  warning  'tl' is already defined                      no-redeclare
+   68:22  warning  'gsap' is not defined                        no-undef
+   81:37  warning  'SteppedEase' is not defined                 no-undef
+   88:21  warning  'task_done' is not defined                   no-undef
+   89:21  warning  'addTask' is not defined                     no-undef
+   97:10  warning  'machineonstep31' is defined but never used  no-unused-vars
+  100:9   warning  'gsap' is not defined                        no-undef
+  102:9   warning  'beep' is not defined                        no-undef
+  106:10  warning  'incTemp' is defined but never used          no-unused-vars
+  111:9   warning  'beep' is not defined                        no-undef
+  115:10  warning  'decTemp' is defined but never used          no-unused-vars
+  120:9   warning  'beep' is not defined                        no-undef
+  124:10  warning  'set31' is defined but never used            no-unused-vars
+  130:13  warning  'gsap' is not defined                        no-undef
+  132:27  warning  'SteppedEase' is not defined                 no-undef
+  138:21  warning  'gsap' is not defined                        no-undef
+  144:9   warning  'beep' is not defined                        no-undef
+  148:10  warning  'heatjuice' is defined but never used        no-unused-vars
+  152:9   warning  'gsap' is not defined                        no-undef
+  153:9   warning  'gsap' is not defined                        no-undef
+
+/home/runner/work/exp-non-enzymatic-browning-iitk/exp-non-enzymatic-browning-iitk/experiment/simulation/scripts/step3.js
+   1:26  warning  'bodymovin' is not defined            no-undef
+   9:26  warning  'bodymovin' is not defined            no-undef
+  19:10  warning  'suckPour' is defined but never used  no-unused-vars
+  20:10  warning  'task_done' is not defined            no-undef
+  23:22  warning  'gsap' is not defined                 no-undef
+  35:37  warning  'SteppedEase' is not defined          no-undef
+  54:17  warning  'obj' is already defined              no-redeclare
+  55:17  warning  'tl' is already defined               no-redeclare
+  55:22  warning  'gsap' is not defined                 no-undef
+  68:37  warning  'SteppedEase' is not defined          no-undef
+  75:21  warning  'task_done' is not defined            no-undef
+  76:21  warning  'addTask' is not defined              no-undef
+
+/home/runner/work/exp-non-enzymatic-browning-iitk/exp-non-enzymatic-browning-iitk/experiment/simulation/scripts/step4.js
+   1:25  warning  'bodymovin' is not defined                   no-undef
+   9:26  warning  'bodymovin' is not defined                   no-undef
+  20:10  warning  'suckPourAlcohol' is defined but never used  no-unused-vars
+  21:10  warning  'task_done' is not defined                   no-undef
+  24:22  warning  'gsap' is not defined                        no-undef
+  33:37  warning  'SteppedEase' is not defined                 no-undef
+  53:17  warning  'obj' is already defined                     no-redeclare
+  54:17  warning  'tl' is already defined                      no-redeclare
+  54:22  warning  'gsap' is not defined                        no-undef
+  67:37  warning  'SteppedEase' is not defined                 no-undef
+  77:29  warning  'gsap' is not defined                        no-undef
+  83:29  warning  'task_done' is not defined                   no-undef
+  84:29  warning  'addTask' is not defined                     no-undef
+
+/home/runner/work/exp-non-enzymatic-browning-iitk/exp-non-enzymatic-browning-iitk/experiment/simulation/scripts/step5.js
+    1:25  warning  'bodymovin' is not defined                  no-undef
+   20:10  warning  'ON' is defined but never used              no-unused-vars
+   23:9   warning  'gsap' is not defined                       no-undef
+   24:9   warning  'gsap' is not defined                       no-undef
+   25:9   warning  'gsap' is not defined                       no-undef
+   26:9   warning  'gsap' is not defined                       no-undef
+   29:9   warning  'beep' is not defined                       no-undef
+   33:10  warning  'animateSegment' is defined but never used  no-unused-vars
+   34:10  warning  'task_done' is not defined                  no-undef
+   38:13  warning  'hydrolics' is not defined                  no-undef
+   39:22  warning  'gsap' is not defined                       no-undef
+   54:17  warning  'tl' is already defined                     no-redeclare
+   54:22  warning  'gsap' is not defined                       no-undef
+   69:17  warning  'tl' is already defined                     no-redeclare
+   69:22  warning  'gsap' is not defined                       no-undef
+   82:13  warning  'hydrolics' is not defined                  no-undef
+   84:13  warning  'gsap' is not defined                       no-undef
+   89:13  warning  'hydrolics' is not defined                  no-undef
+   92:17  warning  'tl' is already defined                     no-redeclare
+   92:22  warning  'gsap' is not defined                       no-undef
+  111:17  warning  'tl' is already defined                     no-redeclare
+  111:22  warning  'gsap' is not defined                       no-undef
+  132:13  warning  'gsap' is not defined                       no-undef
+  133:13  warning  'gsap' is not defined                       no-undef
+  134:13  warning  'gsap' is not defined                       no-undef
+  136:13  warning  'task_done' is not defined                  no-undef
+  137:13  warning  'addTask' is not defined                    no-undef
+  142:10  warning  'MEN' is defined but never used             no-unused-vars
+  144:9   warning  'beep' is not defined                       no-undef
+  159:10  warning  'SET' is defined but never used             no-unused-vars
+  170:17  warning  'gsap' is not defined                       no-undef
+  171:17  warning  'humming' is not defined                    no-undef
+  176:17  warning  'gsap' is not defined                       no-undef
+  179:31  warning  'SteppedEase' is not defined                no-undef
+  190:13  warning  'gsap' is not defined                       no-undef
+  193:27  warning  'SteppedEase' is not defined                no-undef
+  202:13  warning  'gsap' is not defined                       no-undef
+  205:27  warning  'SteppedEase' is not defined                no-undef
+  212:13  warning  'humming' is not defined                    no-undef
+  215:9   warning  'beep' is not defined                       no-undef
+  219:10  warning  'ADD' is defined but never used             no-unused-vars
+  229:9   warning  'beep' is not defined                       no-undef
+  233:10  warning  'SUB' is defined but never used             no-unused-vars
+  243:9   warning  'beep' is not defined                       no-undef
+
+/home/runner/work/exp-non-enzymatic-browning-iitk/exp-non-enzymatic-browning-iitk/experiment/simulation/scripts/step7.js
+    1:25  warning  'bodymovin' is not defined             no-undef
+    9:26  warning  'bodymovin' is not defined             no-undef
+   17:26  warning  'bodymovin' is not defined             no-undef
+   25:26  warning  'bodymovin' is not defined             no-undef
+   36:10  warning  'suckPour7' is defined but never used  no-unused-vars
+   37:10  warning  'task_done' is not defined             no-undef
+   40:22  warning  'gsap' is not defined                  no-undef
+   52:37  warning  'SteppedEase' is not defined           no-undef
+   70:17  warning  'obj' is already defined               no-redeclare
+   71:17  warning  'tl' is already defined                no-redeclare
+   71:22  warning  'gsap' is not defined                  no-undef
+   83:37  warning  'SteppedEase' is not defined           no-undef
+   99:17  warning  'obj' is already defined               no-redeclare
+  100:17  warning  'tl' is already defined                no-redeclare
+  100:22  warning  'gsap' is not defined                  no-undef
+  112:37  warning  'SteppedEase' is not defined           no-undef
+  131:17  warning  'obj' is already defined               no-redeclare
+  132:17  warning  'tl' is already defined                no-redeclare
+  132:22  warning  'gsap' is not defined                  no-undef
+  144:37  warning  'SteppedEase' is not defined           no-undef
+  156:25  warning  'task_done' is not defined             no-undef
+  157:25  warning  'addTask' is not defined               no-undef
+
+/home/runner/work/exp-non-enzymatic-browning-iitk/exp-non-enzymatic-browning-iitk/experiment/simulation/scripts/step8.js
+    1:26  warning  'bodymovin' is not defined             no-undef
+    9:26  warning  'bodymovin' is not defined             no-undef
+   19:10  warning  'suckPour8' is defined but never used  no-unused-vars
+   20:10  warning  'task_done' is not defined             no-undef
+   23:22  warning  'gsap' is not defined                  no-undef
+   32:37  warning  'SteppedEase' is not defined           no-undef
+   51:17  warning  'obj' is already defined               no-redeclare
+   52:17  warning  'tl' is already defined                no-redeclare
+   52:22  warning  'gsap' is not defined                  no-undef
+   64:37  warning  'SteppedEase' is not defined           no-undef
+   80:17  warning  'obj' is already defined               no-redeclare
+   81:17  warning  'tl' is already defined                no-redeclare
+   81:22  warning  'gsap' is not defined                  no-undef
+   90:37  warning  'SteppedEase' is not defined           no-undef
+  110:17  warning  'obj' is already defined               no-redeclare
+  111:17  warning  'tl' is already defined                no-redeclare
+  111:22  warning  'gsap' is not defined                  no-undef
+  123:37  warning  'SteppedEase' is not defined           no-undef
+  135:25  warning  'task_done' is not defined             no-undef
+  136:25  warning  'addTask' is not defined               no-undef
+
+/home/runner/work/exp-non-enzymatic-browning-iitk/exp-non-enzymatic-browning-iitk/experiment/simulation/scripts/step9.js
+    1:25  warning  'bodymovin' is not defined                 no-undef
+   15:10  warning  'turnOnMachine' is defined but never used  no-unused-vars
+   16:5   warning  'beep' is not defined                      no-undef
+   18:5   warning  'gsap' is not defined                      no-undef
+   25:10  warning  'menu' is defined but never used           no-unused-vars
+   27:9   warning  'beep' is not defined                      no-undef
+   29:9   warning  'gsap' is not defined                      no-undef
+   33:10  warning  'read' is defined but never used           no-unused-vars
+   35:9   warning  'beep' is not defined                      no-undef
+   41:9   warning  'gsap' is not defined                      no-undef
+   42:9   warning  'gsap' is not defined                      no-undef
+   44:9   warning  'gsap' is not defined                      no-undef
+   47:9   warning  'task_done' is not defined                 no-undef
+   48:9   warning  'addTask' is not defined                   no-undef
+   52:10  warning  'inc' is defined but never used            no-unused-vars
+   54:9   warning  'beep' is not defined                      no-undef
+   66:10  warning  'dec' is defined but never used            no-unused-vars
+   68:9   warning  'beep' is not defined                      no-undef
+   80:10  warning  'step9' is defined but never used          no-unused-vars
+   85:13  warning  'gsap' is not defined                      no-undef
+   86:13  warning  'gsap' is not defined                      no-undef
+   91:10  warning  'closeLidFunc' is defined but never used   no-unused-vars
+   95:9   warning  'gsap' is not defined                      no-undef
+   97:9   warning  'gsap' is not defined                      no-undef
+  100:17  warning  'gsap' is not defined                      no-undef
+
+✖ 344 problems (0 errors, 344 warnings)
+
