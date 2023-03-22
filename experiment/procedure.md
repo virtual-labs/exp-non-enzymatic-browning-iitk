@@ -1,5 +1,3 @@
-### Procedure
-
 **Materials required**
   
 Juice sample   
