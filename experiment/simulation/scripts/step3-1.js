@@ -94,15 +94,34 @@ function suckPour31() {
     }
 }
 
+// function machineonstep31() {
+//     if(!machineon31) {
+//         machineon31 = true
+//         gsap.to('#step-31 .control-5', {opacity: 0})
+        
+//         beep.play()
+//     }
+// }
+
+// function machineonstep31() {
+//     if (!machineon31) {
+//         machineon31 = true;
+//         gsap.to('#step-31 .control-5', {opacity: 0});
+//         document.querySelector('#step-31 .control-5').style.color = 'red';
+//         beep.play();
+//     }
+// }
 function machineonstep31() {
-    if(!machineon31) {
-        machineon31 = true
-        gsap.to('#step-31 .control-5', {opacity: 0})
-    
-        beep.play()
+    if (!machineon31) {
+        machineon31 = true;
+        gsap.to('#step-31 .control-5', {opacity: 0});
+        beep.play();
+
+        // Hide the white circle
+        gsap.to('#step-31 .white-circle', {duration: 0,opacity:0});
+        document.getElementById('white-circle').style.display = 'none';
     }
 }
-
 function incTemp() {
     if(!machineset31 && machineon31) {
         temp++

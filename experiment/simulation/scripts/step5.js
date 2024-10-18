@@ -134,7 +134,7 @@ function animateSegment() {
             gsap.to('#step-5 .controlCentrifuge1', { opacity: 0 })
 
             task_done = true
-            addTask('Step5: Centrifuge sample for 10 min at 5000 rpm')
+            addTask('Step6: Centrifuge samples for 10 min at 5000 rpm')
         }
     }
 }

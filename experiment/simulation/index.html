@@ -80,6 +80,7 @@
             overflow: hidden;
             display: none;
         }
+      
 
         .step h1.title {
             text-align: center;
@@ -98,6 +99,17 @@
             position: absolute;
             cursor: pointer;
         }
+        .white-circle {
+    position: absolute;
+    top: 77%;
+    left: 77%;
+    transform: translate(-50%, -50%);
+    width: 40px; 
+    height: 40px; 
+    background-color: white;
+    border-radius: 50%;
+}
+ 
 
         #controls {
             display: none;
@@ -117,6 +129,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, .3);
         }
 
+
         #controls.active {
             display: block;
         }
@@ -127,7 +140,7 @@
 
         #taskslist li {
             padding: 5px 0;
-            font-size: 22px;
+            font-size: 18px;
         }
     </style>
     <script src="scripts/lottie.min.js"></script>
@@ -137,7 +150,7 @@
     <header>
         <h1>Exp 2: Non-enzymatic browning reactions and its determination</h1>
         <button class="clear" onclick="toggleSidebar()">
-            <img src="assets/checklist.svg" width="50" alt="checklist" />
+            <img src="assets/checklist.svg" width="50" alt="checklist"/>
         </button>
     </header>
 
@@ -260,6 +273,9 @@
 
                 <div class="bodymovinanim_3-1" style="top:0; left:-400px;width:800px; position: absolute; "></div>
                 <div class="bodymovinanim_3-2" style="top:0; left: 0px;width:800px; position: absolute; "></div>
+                <!-- <div class="image-container">
+                 <img src="your-image.jpg" alt="Background Image" class="background-image">  -->
+                    <div class="white-circle"></div>
 
                 <div class="element pipette" onclick="suckPour31()"
                     style="left: 200px; opacity: 0; top: 200px; display: flex;justify-content: center;align-items: center;flex-direction: column;">
@@ -296,7 +312,12 @@
                 onclick="machineonstep31()" 
                 style="left: 640px; top: 455px; background: rgb(0, 0, 0) none repeat scroll 0% 0%; color: rgb(255, 255, 255); padding: 4px;">
                 Turn on
-            </small>
+            </small> 
+            <!-- <small class="control-5 element" 
+                onclick="machineonstep31()" 
+                style="left: 640px; top: 455px; background: rgb(0, 0, 0) none repeat scroll 0% 0%; color: rgb(255, 255, 255); padding: 4px; color: white;">
+                Turn on
+</small> -->
 
             <button class="element" style="left: 432px;
                 top: 400px;
@@ -627,11 +648,11 @@
 
                     <h1 style="margin-top: 30px;">Result</h1>
 
-                    <p style="font-weight: 600;">NeBI of fresh apple juice is = 0.7312</p>
-                    <p style="font-weight: 600;">NeBI of heated apple juice is = 0.9147</p>
+                    <p style="font-weight: 600;">NEB index of fresh apple juice is = 0.7312</p>
+                    <p style="font-weight: 600;">NEB index of heated apple juice is = 0.9147</p>
 
                     <h1 style="margin-top: 30px;">Conclusion</h1>
-                    <p style="font-weight: 600;">Results indicated that thermal treatment of juices increase the NeBI value of the sample</p>
+                    <p style="font-weight: 600;">Results indicated that thermal treatment of juices increase the NEB index of the sample</p>
                 </div>
             </div>
         </div>

@@ -133,7 +133,7 @@ function suckPour8() {
                 .to('#step-8 .pipette small', {
                     onComplete: () => {
                         task_done = true
-                        addTask('Step7: Pipette out 1ml of supernatant from the centrifuge tubes and add to the seperate cuvettes')
+                        addTask('Step8: Add 1 ml of 95% ethyl alcohol to 2 others cubettes')
                     }
                 })
         }

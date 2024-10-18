@@ -29,6 +29,9 @@ function next() {
         if(!steps[curent_step].classList.contains('step-title'))
             task_done = false
     }
+    if(curent_step == 1){
+        addTask("Step0: Glasswares & instruments required")
+    }
 }
 
 function previous() {
