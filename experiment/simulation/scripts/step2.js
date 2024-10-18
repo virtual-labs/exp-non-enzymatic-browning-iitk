@@ -37,7 +37,7 @@ function filterJuice2() {
             },
             onComplete: () => {
                 task_done = true
-                addTask('Step2: Filtration of juice sample')
+                addTask('Step2: Filtration of juice sample')  
             }
         })
         

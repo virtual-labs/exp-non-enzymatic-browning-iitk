@@ -81,7 +81,7 @@ function suckPourAlcohol() {
                             document.querySelector('#step-4 .pipette small').innerHTML = 'click to pipette out alcohol'
                         } else {
                             task_done = true
-                            addTask('Step4: Add 5 ml of 95% ethyl alcohol in the centrifuge Tube')
+                            addTask('Step5: Add 5 ml of 95% ethyl alcohol in both centrifuge Tubes')
                         }
                     }
                 })
