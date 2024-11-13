@@ -112,9 +112,9 @@
     },                                  ///// To add more questions, copy the section below 
 
     {
-      question: "Visible region fall between the following",  ///// Write the question inside double quotes
+      question: "Visible region fall between the following wavelength",  ///// Write the question inside double quotes
        answers: {
-         a: "380-750 nm",                  ///// Write the option 1 inside double quotes
+         a: "380-700 nm",                  ///// Write the option 1 inside double quotes
          b: "750 nm-1 mm",                  ///// Write the option 2 inside double quotes
          c: "10-400 nm",                  ///// Write the option 3 inside double quotes
          d: "10-400 nm"                   ///// Write the option 4 inside double quotes
