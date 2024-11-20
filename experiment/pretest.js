@@ -94,7 +94,7 @@
       answers: {
         a: "Maillard reaction",                  ///// Write the option 1 inside double quotes
         b: "Caramellisation reaction",                  ///// Write the option 2 inside double quotes
-        c: "Caramellisation reaction",                  ///// Write the option 3 inside double quotes
+        c: "Oxidation of ascorbic acid",                  ///// Write the option 3 inside double quotes
         d: "All of the above"                   ///// Write the option 4 inside double quotes
       },
       correctAnswer: "d"                ///// Write the correct option inside double quotes
@@ -114,10 +114,10 @@
     {
       question: "Visible region fall between the following wavelength",  ///// Write the question inside double quotes
        answers: {
-         a: "380-700 nm",                  ///// Write the option 1 inside double quotes
-         b: "750 nm-1 mm",                  ///// Write the option 2 inside double quotes
-         c: "10-400 nm",                  ///// Write the option 3 inside double quotes
-         d: "10-400 nm"                   ///// Write the option 4 inside double quotes
+         a: "380-750 nm",                  ///// Write the option 1 inside double quotes
+         b: "750-950 mm",                  ///// Write the option 2 inside double quotes
+         c: "100-400 nm",                  ///// Write the option 3 inside double quotes
+         d: "10-100 nm"                   ///// Write the option 4 inside double quotes
        },
        correctAnswer: "a"                ///// Write the correct option inside double quotes
      },                                  ///// To add more questions, copy the section below 
@@ -127,7 +127,7 @@
        answers: {
          a: "Glycosylamine",                  ///// Write the option 1 inside double quotes
          b: "1-amino 2-keto sugar",                  ///// Write the option 2 inside double quotes
-         c: "1-amino 2-keto sugar ",                  ///// Write the option 3 inside double quotes
+         c: "Methyl α-dicarbonyl compound",                  ///// Write the option 3 inside double quotes
          d: "5-hydroxymethyl-2-furaldehyde"                   ///// Write the option 4 inside double quotes
        },
        correctAnswer: "d"                ///// Write the correct option inside double quotes
