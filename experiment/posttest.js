@@ -90,12 +90,12 @@
 
   const myQuestions = [
     {
-      question: "Higher value of non-enzymatic browning index (NEBI) of product indicates",  ///// Write the question inside double quotes
+      question: "Higher value of Non-Enzymatic Browning Index (NEBI) of a product indicates:",  ///// Write the question inside double quotes
       answers: {
-        a: "Superior quality",                  ///// Write the option 1 inside double quotes
-        b: "Inferior quality",                  ///// Write the option 2 inside double quotes
-        c: "Quality remain constant",                  ///// Write the option 3 inside double quotes
-        d: "Cannot predict quality"                   ///// Write the option 4 inside double quotes
+        a: "Superior product quality",                  ///// Write the option 1 inside double quotes
+        b: "Inferior product quality",                  ///// Write the option 2 inside double quotes
+        c: "No change in product characteristics",                  ///// Write the option 3 inside double quotes
+        d: "Increased moisture content"                   ///// Write the option 4 inside double quotes
       },
       correctAnswer: "b"                ///// Write the correct option inside double quotes
     },
@@ -112,12 +112,12 @@
     },                                  ///// To add more questions, copy the section below 
 
     {
-      question: "The absorbance value of thermally treated sample will be",  ///// Write the question inside double quotes
+      question: "The absorbance value of a thermally treated sample will generally be:",  ///// Write the question inside double quotes
       answers: {
-        a: "Less",                  ///// Write the option 1 inside double quotes
-        b: "More",                  ///// Write the option 2 inside double quotes
-        c: "Same",                  ///// Write the option 3 inside double quotes
-        d: "Cannot say anything"                   ///// Write the option 4 inside double quotes
+        a: "Lower than the untreated sample",                  ///// Write the option 1 inside double quotes
+        b: "Higher than the untreated sample",                  ///// Write the option 2 inside double quotes
+        c: "Equal to the untreated sample",                  ///// Write the option 3 inside double quotes
+        d: "Independent of browning reaction"                   ///// Write the option 4 inside double quotes
       },
       correctAnswer: "b"                ///// Write the correct option inside double quotes
     },                                  ///// To add more questions, copy the section below 
@@ -131,7 +131,20 @@
         d: "None of the above"                   ///// Write the option 4 inside double quotes
       },
       correctAnswer: "b"                ///// Write the correct option inside double quotes
-    },                                  ///// To add more questions, copy the section below 
+    }, 
+    
+    {
+      question: "During centrifugation, suspended particles:",  ///// Write the question inside double quotes
+      answers: {
+        a: "Float to the surface",                  ///// Write the option 1 inside double quotes
+        b: "Settle at the bottom due to centrifugal force",                  ///// Write the option 2 inside double quotes
+        c: "Remain uniformly distributed",                  ///// Write the option 3 inside double quotes
+        d: "Dissolve completely in the medium"                   ///// Write the option 4 inside double quotes
+      },
+      correctAnswer: "b"                ///// Write the correct option inside double quotes
+    }, 
+    
+    ///// To add more questions, copy the section below 
 
 
     /* To add more MCQ's, copy the below section, starting from open curly braces ( { )
