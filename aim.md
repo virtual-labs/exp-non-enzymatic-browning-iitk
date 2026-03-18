@@ -1,0 +1,1 @@
+This experiment aims to determine Non-enzymatic browning reactions which are initiated during food processes due to interaction of reducing sugars and amino acids under certain conditions, which may be desirable or undesirable. Its determination is important to optimize the processing conditions and in order to get desirable product. 
