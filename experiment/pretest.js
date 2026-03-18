@@ -101,14 +101,14 @@
     },
 
     {
-     question: "Minimum reactant required for maillard browning are",  ///// Write the question inside double quotes
+     question: "The essential reactants required for the Maillard browning reaction are:",  ///// Write the question inside double quotes
       answers: {
-        a: "Reducing sugar",                  ///// Write the option 1 inside double quotes
-        b: "Amino acids",                  ///// Write the option 2 inside double quotes
-        c: "Moisture content",                  ///// Write the option 3 inside double quotes
-        d: "All of the above"                   ///// Write the option 4 inside double quotes
+        a: "Reducing sugar and amino acid",                  ///// Write the option 1 inside double quotes
+        b: "Reducing sugar and moisture",                  ///// Write the option 2 inside double quotes
+        c: "Amino acid and oxygen",                  ///// Write the option 3 inside double quotes
+        d: "Protein and lipid"                   ///// Write the option 4 inside double quotes
       },
-      correctAnswer: "d"                ///// Write the correct option inside double quotes
+      correctAnswer: "a"                ///// Write the correct option inside double quotes
     },                                  ///// To add more questions, copy the section below 
 
     {
