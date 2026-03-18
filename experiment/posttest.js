@@ -121,17 +121,6 @@
       },
       correctAnswer: "b"                ///// Write the correct option inside double quotes
     },                                  ///// To add more questions, copy the section below 
-
-    {
-      question: "In the centrifugation process, the suspended particles are",  ///// Write the question inside double quotes
-      answers: {
-        a: "Come on the surface",                  ///// Write the option 1 inside double quotes
-        b: "Settle down in the bottom",                  ///// Write the option 2 inside double quotes
-        c: "Uniformly suspended in the whole medium",                  ///// Write the option 3 inside double quotes
-        d: "None of the above"                   ///// Write the option 4 inside double quotes
-      },
-      correctAnswer: "b"                ///// Write the correct option inside double quotes
-    }, 
     
     {
       question: "During centrifugation, suspended particles:",  ///// Write the question inside double quotes
